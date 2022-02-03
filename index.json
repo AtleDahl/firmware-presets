@@ -213,7 +213,6 @@
       "crossfire",
       "CRSF",
       "ctzsnooze",
-      "CTZsoonze",
       "default",
       "defaults",
       "diatone",
@@ -237,7 +236,6 @@
       "freedom spec",
       "freestyle",
       "freestyle_HD",
-      "freesytle",
       "frsky",
       "ghost",
       "GHST",
@@ -258,7 +256,7 @@
       "jitter",
       "justice",
       "karate",
-      "KarateBrot",
+      "karateBrot",
       "launch",
       "launch_mode",
       "leds",
@@ -329,7 +327,6 @@
       "spec",
       "speedybee",
       "stats",
-      "suagrK",
       "sugarK",
       "Supafly",
       "SupaflyFPV",
@@ -651,29 +648,6 @@
         "reset"
       ],
       "author": "Betaflight",
-      "priority": 100
-    },
-    {
-      "fullPath": "presets/4.3/filters/karate_array.txt",
-      "hash": "7d4913bf9839cc9bb055ab942a22c3c015a2f258e30633a07edcaaf98eb85df0",
-      "title": "the Karate array",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "FILTERS",
-      "status": "OFFICIAL",
-      "keywords": [
-        "filter",
-        "filters",
-        "karate",
-        "race",
-        "freesytle",
-        "suagrK",
-        "CTZsoonze",
-        "KarateBrot",
-        "5\""
-      ],
-      "author": "sugarK",
       "priority": 100
     },
     {
