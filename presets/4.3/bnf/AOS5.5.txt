@@ -1,0 +1,182 @@
+# 
+
+# diff all
+
+# version
+# Betaflight / STM32F7X2 (S7X2) 4.3.0 Jan  9 2022 / 11:51:40 (ee8560af4) MSP API: 1.44
+# config: manufacturer_id: AIKO, board_name: AIKONF7, version: c2b8c0d3, date: 2021-06-18T03:42:42Z
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name AIKONF7
+manufacturer_id AIKO
+mcu_id 001c00133056500d20383447
+signature 
+
+# resources
+resource BEEPER 1 B14
+resource SERIAL_TX 2 A03
+resource SERIAL_RX 2 A02
+resource CAMERA_CONTROL 1 C15
+
+# feature
+feature -RX_PARALLEL_PWM
+feature -AIRMODE
+feature RX_SERIAL
+feature SOFTSERIAL
+feature TELEMETRY
+feature OSD
+
+# serial
+serial 1 64 115200 57600 0 115200
+serial 2 1 115200 57600 0 115200
+
+# beeper
+beeper -GYRO_CALIBRATED
+beeper -DISARMING
+beeper -ARMING
+beeper -ARMING_GPS_FIX
+beeper -BAT_LOW
+beeper -GPS_STATUS
+beeper -ACC_CALIBRATION
+beeper -ACC_CALIBRATION_FAIL
+beeper -READY_BEEP
+beeper -DISARM_REPEAT
+beeper -ARMED
+beeper -SYSTEM_INIT
+beeper -ON_USB
+beeper -BLACKBOX_ERASE
+beeper -CAM_CONNECTION_OPEN
+beeper -CAM_CONNECTION_CLOSE
+beeper -RC_SMOOTHING_INIT_FAIL
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 2 1700 2100 0 0
+aux 2 13 5 1700 2100 0 0
+aux 3 28 2 900 1300 0 0
+aux 4 36 4 1700 2100 0 0
+
+# rxfail
+rxfail 11 s 1000
+
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 1000
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 1000
+set acc_calibration = 1,-46,41,1
+set mag_hardware = NONE
+set baro_hardware = NONE
+set rssi_channel = 12
+set rc_smoothing_auto_factor = 130
+set rc_smoothing_auto_factor_throttle = 50
+set rc_smoothing_setpoint_cutoff = 10
+set rc_smoothing_feedforward_cutoff = 10
+set rc_smoothing_throttle_cutoff = 17
+set serialrx_provider = CRSF
+set blackbox_sample_rate = 1/8
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT600
+set yaw_motors_reversed = ON
+set small_angle = 180
+set deadband = 3
+set yaw_deadband = 10
+set simplified_gyro_filter_multiplier = 200
+set osd_vbat_pos = 2535
+set osd_rssi_pos = 2508
+set osd_flymode_pos = 2080
+set osd_ah_sbar_pos = 399
+set osd_mah_drawn_pos = 2544
+set osd_gps_speed_pos = 12
+set osd_gps_lon_pos = 64
+set osd_gps_lat_pos = 96
+set osd_gps_sats_pos = 26
+set osd_home_dir_pos = 19
+set osd_home_dist_pos = 57
+set osd_altitude_pos = 2048
+set osd_avg_cell_voltage_pos = 2540
+set osd_battery_usage_pos = 480
+set osd_disarmed_pos = 2284
+set debug_mode = GYRO_SCALED
+set gyro_1_sensor_align = CW180
+set gyro_1_align_yaw = 1800
+set rpm_filter_q = 750
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 82
+set dterm_lpf1_dyn_max_hz = 165
+set dterm_lpf1_static_hz = 165
+set dterm_lpf2_static_hz = 165
+set p_pitch = 75
+set i_pitch = 120
+set d_pitch = 54
+set f_pitch = 199
+set p_roll = 71
+set i_roll = 115
+set d_roll = 47
+set f_roll = 191
+set p_yaw = 71
+set i_yaw = 115
+set f_yaw = 191
+set d_min_roll = 47
+set d_min_pitch = 54
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 16
+set simplified_master_multiplier = 160
+set simplified_i_gain = 90
+set simplified_dmax_gain = 0
+set simplified_dterm_filter = OFF
+set simplified_dterm_filter_multiplier = 110
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set roll_rc_rate = 1
+set pitch_rc_rate = 1
+set yaw_rc_rate = 1
+
+rateprofile 1
+
+# rateprofile 1
+set roll_rc_rate = 20
+set pitch_rc_rate = 20
+set yaw_rc_rate = 20
+set roll_srate = 20
+set pitch_srate = 20
+set yaw_srate = 20
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
