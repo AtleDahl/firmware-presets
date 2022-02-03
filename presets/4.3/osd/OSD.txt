@@ -1,0 +1,25 @@
+#$ TITLE: AD 4.3 OSD settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: OSD
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: OSD
+#$ AUTHOR: AD
+#$ DESCRIPTION: OSD
+
+set osd_vbat_pos = 2535
+set osd_rssi_pos = 2508
+set osd_flymode_pos = 2080
+set osd_ah_sbar_pos = 399
+set osd_mah_drawn_pos = 2544
+set osd_gps_speed_pos = 12
+set osd_gps_lon_pos = 64
+set osd_gps_lat_pos = 96
+set osd_gps_sats_pos = 26
+set osd_home_dir_pos = 19
+set osd_home_dist_pos = 57
+set osd_altitude_pos = 2048
+set osd_avg_cell_voltage_pos = 2540
+set osd_battery_usage_pos = 480
+set osd_disarmed_pos = 2284
+
+
